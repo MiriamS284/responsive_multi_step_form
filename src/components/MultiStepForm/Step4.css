@@ -1,0 +1,89 @@
+.Step4 {
+  margin: 30px;
+}
+
+.Step4 h1 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.Step4 p {
+  font-weight: bold;
+  color: hsl(229, 24%, 87%);
+  margin-bottom: 30px;
+}
+
+.summary-section {
+  background-color: hsl(217, 100%, 97%);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-container,
+.addon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.summary-section h5,
+.summary-section span {
+  margin-bottom: 5px;
+  color: hsl(213, 96%, 18%);
+}
+
+.summary-section h5 {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+
+.plan-container span {
+  font-weight: bold;
+}
+
+.summary-section span {
+  text-align: right;
+  flex-grow: 1;
+  font-weight: medium;
+}
+
+.summary-section button {
+  background-color: transparent;
+  color: hsl(229, 24%, 87%);
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.summary-section button:hover {
+  cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.total-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-section h3 {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 10px;
+}
+
+.total-section p {
+  color: hsl(213, 96%, 18%);
+}

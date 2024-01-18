@@ -1,0 +1,48 @@
+.btn-steps {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  background-color: white;
+}
+.btn-back,
+.btn-next {
+  font-size: medium;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-back {
+  color: hsl(231, 11%, 63%);
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-right: 350px;
+}
+
+.btn-back:hover {
+  cursor: pointer;
+  color: hsl(213, 96%, 18%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.btn-next {
+  font-size: medium;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 96%, 18%);
+}
+
+.btn-next:hover {
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .btn-steps {
+  }
+}

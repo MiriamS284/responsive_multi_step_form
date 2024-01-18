@@ -1,0 +1,81 @@
+/* StepSelector.css */
+.step-selector {
+  list-style: none;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.step-selector li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.step-selector li span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: hsl(231, 100%, 99%);
+  border-radius: 50%;
+  border: 1px solid hsl(231, 100%, 99%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.step-selector li.active span {
+  background-color: var(--light-blue);
+  color: hsl(213, 96%, 18%);
+}
+
+.step-selector li h4 {
+  color: hsl(231, 100%, 99%);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: medium;
+}
+
+.step-selector li h6 {
+  color: hsl(231, 11%, 63%);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: smaller;
+}
+
+@media (max-width: 375px) {
+  .step-selector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .step-selector span {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  .step-selector h4,
+  .step-selector h6 {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.google.com/specimen/Ubuntu");
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  color: var(--cool-gray);
+  background-color: var(--magnolia);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Weitere Stile hier */
+
+.multi-step-form-container {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 60vw;
+  min-height: 95vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps-list {
+  flex-basis: 30%;
+  background-image: url("../assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.step-item {
+  position: relative;
+  z-index: 1;
+}
+
+.step-item.active {
+  font-weight: bold;
+}
+
+.step-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 380px;
+    display: flex;
+    height: 667px;
+    padding: 0;
+  }
+  .multi-step-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--magnolia);
+  }
+
+  .steps-list {
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/images/bg-sidebar-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .step-content {
+    margin: 0 auto;
+    width: 75%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5%);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
